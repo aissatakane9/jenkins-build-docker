@@ -10,7 +10,7 @@ node{
     }
 
     stage('Test image') {
-        docker.image('aysata/nginx').withRun('-p 80:80') { c ->
+        docker.image('aysta/nginx').withRun('-p 80:80') { c ->
         sh 'docker ps'
         sh 'curl localhost'
 	     }
